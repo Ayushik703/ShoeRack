@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b0d75;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.ham {
+    font-size: 2.3rem;
+    color: #BCC6CC;
+    display: none;
+}
+
+.cross {
+    font-size: 2.3rem;
+    color: #BCC6CC;
+    display: none;
+}
+
+.logo {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #9c9e9f, #f6f6f6);
+    color: #4b0d75;
+    font-size: 2.8rem;
+    border-radius: 1rem;
+}
+
+.inner i {
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.signup {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: #4b0d75;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup:hover {
+    background-color: whitesmoke;
+    color: #4b0d75;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 1rem 0; */
+}
+
+.outter {
+    width: 27rem;
+    background-color: white;
+}
+
+.sidebar {
+    background-color: white;
+    /* position: fixed; */
+    width: 20%;
+    min-height: 100%;
+    /* border: 1px solid black; */
+    box-shadow: 1px 2px 3px rgb(231, 230, 230);
+    padding: 1.5rem;
+}
+
+.sidebar h1 {
+    color: #4b0d75;
+    /* margin: 1rem; */
+}
+
+hr {
+    margin: 0.5rem 1rem;
+}
+
+.sidebar h2 {
+    color: #4b0d75;
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.sidebar ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+.sidebar ul li span {
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: #4b0d75;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.buttons button {
+    padding: 0.5rem 6rem;
+    margin: 0.5rem 0;
+    font-size: 1.6rem;
+    background-color: whitesmoke;
+    border: 2px solid #4b0d75;
+    color: #4b0d75;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.buttons button:hover {
+    color: whitesmoke;
+    background-color: #4b0d75;
+}
+
+
+.stock {
+    /* position: fixed;left: 16%; */
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: relative;
+    z-index: -1;
+    margin: 0 3rem;
+}
+
+.shoes {
+    margin: 1rem 0;
+}
+
+.img img {
+    width: 24rem;
+    height: 25rem;
+    object-fit: cover;
+    box-shadow: 1px 2px 5px grey;
+    border-radius: 2rem;
+}
+
+/* .img i {
+    position: relative;
+    left: -3.5rem;
+    top: -22rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #4b0d75;
+} */
+.heart1 {
+    position: relative;
+    left: -3.5rem;
+    top: -22rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #4b0d75;
+    /* display: block; */
+}
+
+.heart2 {
+    position: relative;
+    left: -6.2rem;
+    top: -22rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #4b0d75;
+    display: none;
+}
+
+.img p {
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: 700;
+    top: -4rem;
+    left: 1rem;
+    color: #4b0d75;
+    background-color: white;
+    width: 3.5rem;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    top: -1rem;
+    padding: 0 1rem;
+}
+
+.info h3 {
+    color: #4b0d75;
+    font-size: 1.7rem;
+}
+
+.info p {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.i i {
+    font-size: 1.3rem;
+    color: #4b0d75;
+}
+
+@media screen and (max-width : 830px) {
+    .img img {
+        width: 22rem;
+        height: 22rem;
+        object-fit: cover;
+    }
+
+    .img i {
+        top: -20rem;
+    }
+    .ham{
+        display: none;
+    }
+    .sidebar {
+        /* display: none; */
+        position: static;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .ham {
+        display: block;
+    }
+
+    .logo {
+        padding: 0.3rem 0.8rem;
+        font-size: 2.3rem;
+        border-radius: 1rem;
+    }
+
+    .inner i {
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .signup {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .outter {
+        display: none;
+        width: 25rem;
+    }
+
+
+    .sidebar {
+        position: fixed;
+        display: none;
+        width: 20rem;
+        padding: 1rem;
+    }
+
+    .buttons button {
+        padding: 0.4rem 5rem;
+        font-size: 1.3rem;
+    }
+
+    .img img {
+        width: 16rem;
+        height: 16rem;
+        object-fit: cover;
+    }
+
+    .img i {
+        top: -14rem;
+    }
+
+    .stock {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 370px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    .ham {
+        font-size: 2rem;
+    }
+
+    .logo {
+        padding: 0.3rem 0.8rem;
+        font-size: 1.8rem;
+    }
+
+    .inner i {
+        font-size: 1.1rem;
+    }
+
+    .signup {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        padding: 0.2rem 0.8rem;
+    }
+}
+
+@media screen and (max-width : 266px) {
+    .img i {
+        top: -16rem;
+        left: 13rem;
+    }
+
+    .img p {
+        font-size: 1.4rem;
+        top: -5rem;
+    }
+}
